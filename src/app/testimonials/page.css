@@ -1,0 +1,139 @@
+/* *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+
+.testi-sec{
+    text-align: center;
+    margin-top: 10%;
+}
+.testi-sec h3{
+    color: #212ea0;
+    font-weight: 600;
+}
+
+.parent-test{
+    margin: 80px 5%;
+    padding: 0 80px;
+    position: relative;
+    /* overflow: hidden; */
+}
+.next-arr, .back-arr{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    /* left: 0; */
+    /* transform: translateY(-25%); */
+    padding:15px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #212ea0;
+    cursor: pointer;
+}
+.next-arr{
+    right: auto;
+    left: 0;
+
+}
+.slide {
+    overflow: hidden;
+}
+
+.slide ul{
+    display: flex;
+    width: 200%;
+    overflow-x: hidden;
+    transition: 0.5s;
+    align-items: center;
+    /* padding: 20px; */
+    /* justify-content: center; */
+    /* margin: auto; */
+}
+
+.slide ul li{
+    list-style-type: none;
+    width: 50%;
+    padding: 10px;
+    overflow-x: hidden;
+}
+.user-info{
+    display: flex;
+    /* padding: 10px; */
+    overflow-x: hidden;
+}
+.slider p{
+    margin-top: 10px;
+}
+
+.slider{
+    box-shadow: 0 0 20px rgba(0,0,0,0.10) ;
+    /* background-color: red; */
+    padding: 10px;
+    /* width: 100%; */
+    border-radius: 10px;
+    color: #676767;
+    line-height: 1.4;
+}
+.slider img{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 4px solid #212ea0;
+}
+
+@media (max-width:600px){
+    
+    .parent-test{
+        padding:0 40px ;
+    }
+    
+    .next-arr, .back-arr{
+        padding: 10px;
+        width: 35px;
+        height: 35px;
+
+
+    }
+    .testi-sec h1{
+        font-size: 26px;
+    }
+    .user-info{
+        display: block;
+        /* font-size: 14px; */
+    }
+    .user-info span{
+        font-size: 12px;
+    }
+    .slider p{
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    .user-info h3{
+        font-size: 14px;
+        margin-top: 5px;
+        margin-bottom: 2px;
+    }
+    
+    .slider img{
+        width: 55px;
+        height: 55px;
+        border: 3px solid #212ea0;
+    }
+
+    
+        
+    .slide ul li{
+        padding: 5px;
+        /* width: 40%; */
+        
+
+    }
+    .slider{
+        padding: 5px;
+        
+    }
+
+
+}
